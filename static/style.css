@@ -56,3 +56,17 @@ h2{color:#273142}
 label{color:#344054}input{color:#273142;border-color:#cfd8e5}input:focus{outline-color:#b9c4ff;border-color:#3657d6}
 .info-grid strong{color:#344054}.badge{color:#3657d6}
 .admin-mark{background:#e9edff;color:#3657d6}.denied-icon{background:#eef2ff;color:#3657d6}
+
+/* Olive and forest professional theme */
+:root{--ink:#28352b;--muted:#687568;--line:#dce3d7;--blue:#65752f;--teal:#8c9d4a;--pale:#f1f4e8;--white:#fff;--shadow:0 18px 55px rgba(53,70,39,.12)}
+body{color:#28352b;background:#fcfdf9}
+h1{background:linear-gradient(110deg,#28352b 8%,#536329 62%,#8c9d4a 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+h2{color:#35452f}
+.brand{color:#35452f}.brand span{color:#65752f}
+.nav-links a,.nav-button{color:#687568}.nav-links a:hover,.form-foot a{color:#65752f}
+.nav-cta,.primary{background:#65752f}.secondary{background:#f1f4e8;color:#536329}.outline{border-color:#dce3d7;color:#536329}
+.eyebrow,.label{color:#65752f}.hero-card{background:linear-gradient(145deg,#f1f4e8,#f7f8f2)}
+.card-icon,.avatar{background:#65752f}
+label{color:#40513e}input{color:#28352b;border-color:#cfd9c9}input:focus{outline-color:#c7d39d;border-color:#65752f}
+.info-grid strong{color:#40513e}.badge{color:#65752f}
+.admin-mark{background:#e9efdc;color:#536329}.denied-icon{background:#f1f4e8;color:#65752f}
