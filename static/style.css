@@ -28,3 +28,17 @@ h2{color:#4a2448}
 label{color:#51384f}input{color:#34263a;border-color:#d8c9da}input:focus{outline-color:#dfb9cc;border-color:#a14573}
 .info-grid strong{color:#51384f}.badge{color:#a14573}
 .admin-mark{background:#f3e8f0;color:#7b3565}.denied-icon{background:#f3e8f0;color:#7b3565}
+
+/* Ruby, rose and ivory theme */
+:root{--ink:#48212c;--muted:#80616b;--line:#f0d8df;--blue:#b4234d;--teal:#e05272;--pale:#fff1f4;--white:#fff;--shadow:0 18px 55px rgba(144,42,70,.13)}
+body{color:#48212c;background:#fffdfd}
+h1{background:linear-gradient(110deg,#7f1738 8%,#b4234d 55%,#e05272 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+h2{color:#7f1738}
+.brand{color:#7f1738}.brand span{color:#e05272}
+.nav-links a,.nav-button{color:#80616b}.nav-links a:hover,.form-foot a{color:#b4234d}
+.nav-cta,.primary{background:#b4234d}.secondary{background:#fff1f4;color:#b4234d}.outline{border-color:#f0d8df;color:#b4234d}
+.eyebrow,.label{color:#e05272}.hero-card{background:linear-gradient(145deg,#fff1f4,#fff8f8)}
+.card-icon,.avatar{background:#e05272}
+label{color:#6b3040}input{color:#48212c;border-color:#e8cbd4}input:focus{outline-color:#f2b6c5;border-color:#e05272}
+.info-grid strong{color:#6b3040}.badge{color:#e05272}
+.admin-mark{background:#ffe8ee;color:#b4234d}.denied-icon{background:#fff0e5;color:#b4234d}
