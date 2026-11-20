@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Admin Page · Student Portal{% endblock %}
+{% block content %}
+<section class="page-heading"><p class="eyebrow">ADMINISTRATION</p><h1>Admin page</h1><p class="lead">This protected page is available only to trusted administrators.</p></section>
+<section class="admin-card"><div class="admin-mark">✓</div><div><p class="label">AUTHORIZED ACCESS</p><h2>Welcome, {{ user.name }}</h2><p>You are signed in with the <strong>admin</strong> role.</p></div></section>
+<form method="post" action="/logout"><button class="button outline" type="submit">Log out</button></form>
+{% endblock %}

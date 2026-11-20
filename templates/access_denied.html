@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block title %}Access Denied · Student Portal{% endblock %}
+{% block content %}
+<section class="denied"><div class="denied-icon">!</div><p class="eyebrow">403 · ACCESS DENIED</p><h1>Admin access required.</h1><p>Your account does not have permission to view this page.</p><div class="actions"><a class="button primary" href="/dashboard">Back to dashboard</a><form method="post" action="/logout"><button class="button outline" type="submit">Log out</button></form></div></section>
+{% endblock %}

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Student Portal{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="/">Student<span>Portal</span></a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        {% if current_user_id %}
+          <a href="/dashboard">Dashboard</a>
+          <form method="post" action="/logout" class="inline-form"><button class="nav-button" type="submit">Log out</button></form>
+        {% else %}
+          <a href="/login">Login</a>
+          <a class="nav-cta" href="/register">Register</a>
+        {% endif %}
+      </div>
+    </nav>
+  </header>
+  <main class="container">{% block content %}{% endblock %}</main>
+  <footer><div class="container">Secure, simple student accounts.</div></footer>
+</body>
+</html>

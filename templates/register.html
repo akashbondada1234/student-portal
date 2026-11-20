@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Register · Student Portal{% endblock %}
+{% block content %}
+<section class="auth-layout"><div class="auth-intro"><p class="eyebrow">GET STARTED</p><h1>Create your student account.</h1><p>Register with your details to access your personal dashboard.</p></div>
+<div class="form-card"><h2>Register</h2><p class="muted">All fields are required.</p>
+{% if errors %}<div class="alert error" role="alert"><ul>{% for error in errors %}<li>{{ error }}</li>{% endfor %}</ul></div>{% endif %}
+<form method="post" action="/register">
+<label for="name">Full Name</label><input id="name" name="name" type="text" value="{{ form.name }}" autocomplete="name" required>
+<label for="email">Email Address</label><input id="email" name="email" type="email" value="{{ form.email }}" autocomplete="email" required>
+<label for="password">Password <span class="hint">(minimum 8 characters)</span></label><input id="password" name="password" type="password" minlength="8" autocomplete="new-password" required>
+<button class="button primary full" type="submit">Create account</button>
+</form><p class="form-foot">Already registered? <a href="/login">Log in</a></p></div></section>
+{% endblock %}

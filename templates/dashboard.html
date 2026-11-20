@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Dashboard · Student Portal{% endblock %}
+{% block content %}
+<section class="page-heading"><p class="eyebrow">PRIVATE DASHBOARD</p><h1>Welcome, {{ user.name }}.</h1><p class="lead">Here are the details for your Student Portal account.</p></section>
+<section class="profile-card"><div class="avatar">{{ user.name[0]|upper }}</div><div class="profile-details"><p class="label">ACCOUNT INFORMATION</p><div class="info-grid"><div><span>Student Name</span><strong>{{ user.name }}</strong></div><div><span>Email Address</span><strong>{{ user.email }}</strong></div><div><span>Role</span><strong class="badge">{{ user.role }}</strong></div></div></div></section>
+<div class="dashboard-actions">{% if user.role == "admin" %}<a class="button secondary" href="/admin">Open admin page</a>{% endif %}<form method="post" action="/logout"><button class="button outline" type="submit">Log out</button></form></div>
+{% endblock %}
