@@ -42,3 +42,17 @@ h2{color:#7f1738}
 label{color:#6b3040}input{color:#48212c;border-color:#e8cbd4}input:focus{outline-color:#f2b6c5;border-color:#e05272}
 .info-grid strong{color:#6b3040}.badge{color:#e05272}
 .admin-mark{background:#ffe8ee;color:#b4234d}.denied-icon{background:#fff0e5;color:#b4234d}
+
+/* Professional graphite and cobalt theme */
+:root{--ink:#273142;--muted:#667085;--line:#d9e1ec;--blue:#3657d6;--teal:#6c7cff;--pale:#eef2ff;--white:#fff;--shadow:0 18px 55px rgba(39,49,66,.12)}
+body{color:#273142;background:#fbfcfe}
+h1{background:linear-gradient(110deg,#273142 8%,#3657d6 72%,#6c7cff 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+h2{color:#273142}
+.brand{color:#273142}.brand span{color:#3657d6}
+.nav-links a,.nav-button{color:#667085}.nav-links a:hover,.form-foot a{color:#3657d6}
+.nav-cta,.primary{background:#3657d6}.secondary{background:#eef2ff;color:#3657d6}.outline{border-color:#d9e1ec;color:#3657d6}
+.eyebrow,.label{color:#3657d6}.hero-card{background:linear-gradient(145deg,#eef2ff,#f6f8fc)}
+.card-icon,.avatar{background:#3657d6}
+label{color:#344054}input{color:#273142;border-color:#cfd8e5}input:focus{outline-color:#b9c4ff;border-color:#3657d6}
+.info-grid strong{color:#344054}.badge{color:#3657d6}
+.admin-mark{background:#e9edff;color:#3657d6}.denied-icon{background:#eef2ff;color:#3657d6}
